@@ -1,0 +1,20 @@
+project_id = "tcstghomtslvvjvtbtmj"
+
+[api]
+enabled = true
+schemas = ["public", "graphql_public", "freshlink"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+auto_expose_new_tables = false
+
+[db]
+major_version = 17
+
+[db.migrations]
+enabled = true
+
+[auth]
+enabled = true
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["http://localhost:3000", "https://mse-food-network.vercel.app"]
+enable_signup = true
